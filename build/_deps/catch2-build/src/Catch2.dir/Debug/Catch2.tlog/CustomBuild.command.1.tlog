@@ -1,0 +1,10 @@
+^C:\USERS\MIKSH\DOCUMENTS\GITHUB\MYSTL\BUILD\_DEPS\CATCH2-SRC\SRC\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/miksh/Documents/GitHub/MySTL -BC:/Users/miksh/Documents/GitHub/MySTL/build --check-stamp-file C:/Users/miksh/Documents/GitHub/MySTL/build/_deps/catch2-build/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

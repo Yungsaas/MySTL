@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/miksh/Documents/GitHub/MySTL/build/_deps/catch2-subbuild/CMakeFiles/catch2-populate"
+		},
+		{
+			"file" : "C:/Users/miksh/Documents/GitHub/MySTL/build/_deps/catch2-subbuild/CMakeFiles/019a9e288d63421391777d8bc88d864d/catch2-populate.rule"
+		},
+		{
+			"file" : "C:/Users/miksh/Documents/GitHub/MySTL/build/_deps/catch2-subbuild/CMakeFiles/d5423edb1e24e2f4cf09a31660e3573b/catch2-populate-complete.rule"
+		},
+		{
+			"file" : "C:/Users/miksh/Documents/GitHub/MySTL/build/_deps/catch2-subbuild/CMakeFiles/37a96552894522e685369000717b53de/catch2-populate-build.rule"
+		},
+		{
+			"file" : "C:/Users/miksh/Documents/GitHub/MySTL/build/_deps/catch2-subbuild/CMakeFiles/37a96552894522e685369000717b53de/catch2-populate-configure.rule"
+		},
+		{
+			"file" : "C:/Users/miksh/Documents/GitHub/MySTL/build/_deps/catch2-subbuild/CMakeFiles/37a96552894522e685369000717b53de/catch2-populate-download.rule"
+		},
+		{
+			"file" : "C:/Users/miksh/Documents/GitHub/MySTL/build/_deps/catch2-subbuild/CMakeFiles/37a96552894522e685369000717b53de/catch2-populate-install.rule"
+		},
+		{
+			"file" : "C:/Users/miksh/Documents/GitHub/MySTL/build/_deps/catch2-subbuild/CMakeFiles/37a96552894522e685369000717b53de/catch2-populate-mkdir.rule"
+		},
+		{
+			"file" : "C:/Users/miksh/Documents/GitHub/MySTL/build/_deps/catch2-subbuild/CMakeFiles/37a96552894522e685369000717b53de/catch2-populate-patch.rule"
+		},
+		{
+			"file" : "C:/Users/miksh/Documents/GitHub/MySTL/build/_deps/catch2-subbuild/CMakeFiles/37a96552894522e685369000717b53de/catch2-populate-test.rule"
+		},
+		{
+			"file" : "C:/Users/miksh/Documents/GitHub/MySTL/build/_deps/catch2-subbuild/CMakeFiles/37a96552894522e685369000717b53de/catch2-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"catch2-populate"
+		],
+		"name" : "catch2-populate"
+	}
+}

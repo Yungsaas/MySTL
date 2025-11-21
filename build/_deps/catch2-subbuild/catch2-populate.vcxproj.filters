@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\miksh\Documents\GitHub\MySTL\build\_deps\catch2-subbuild\CMakeFiles\37a96552894522e685369000717b53de\catch2-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\miksh\Documents\GitHub\MySTL\build\_deps\catch2-subbuild\CMakeFiles\37a96552894522e685369000717b53de\catch2-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\miksh\Documents\GitHub\MySTL\build\_deps\catch2-subbuild\CMakeFiles\37a96552894522e685369000717b53de\catch2-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\miksh\Documents\GitHub\MySTL\build\_deps\catch2-subbuild\CMakeFiles\37a96552894522e685369000717b53de\catch2-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\miksh\Documents\GitHub\MySTL\build\_deps\catch2-subbuild\CMakeFiles\37a96552894522e685369000717b53de\catch2-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\miksh\Documents\GitHub\MySTL\build\_deps\catch2-subbuild\CMakeFiles\37a96552894522e685369000717b53de\catch2-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\miksh\Documents\GitHub\MySTL\build\_deps\catch2-subbuild\CMakeFiles\37a96552894522e685369000717b53de\catch2-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\miksh\Documents\GitHub\MySTL\build\_deps\catch2-subbuild\CMakeFiles\37a96552894522e685369000717b53de\catch2-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\miksh\Documents\GitHub\MySTL\build\_deps\catch2-subbuild\CMakeFiles\d5423edb1e24e2f4cf09a31660e3573b\catch2-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\miksh\Documents\GitHub\MySTL\build\_deps\catch2-subbuild\CMakeFiles\019a9e288d63421391777d8bc88d864d\catch2-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\miksh\Documents\GitHub\MySTL\build\_deps\catch2-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\miksh\Documents\GitHub\MySTL\build\_deps\catch2-subbuild\CMakeFiles\catch2-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{22CBF214-37A5-34BB-B540-FC6B4D1FA2B9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

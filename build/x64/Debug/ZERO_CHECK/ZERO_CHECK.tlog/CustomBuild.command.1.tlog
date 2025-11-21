@@ -1,0 +1,10 @@
+^C:\USERS\MIKSH\DOCUMENTS\GITHUB\MYSTL\BUILD\CMAKEFILES\CE5095851D2FB57D18441C1F81195560\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/miksh/Documents/GitHub/MySTL -BC:/Users/miksh/Documents/GitHub/MySTL/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/miksh/Documents/GitHub/MySTL/build/MyVectorTest.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
