@@ -1,26 +1,23 @@
 cmake_minimum_required(VERSION 3.14)
+
 project(MyVectorTest LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 17)
 
 include_directories(source)
+include_directories(extras)
 
-Include(FetchContent)
+add_library(Catch2 STATIC extras/catch_amalgamated.cpp)
+target_include_directories(Catch2 PUBLIC extras)
 
-FetchContent_Declare(
-  Catch2
-  GIT_REPOSITORY https://github.com/catchorg/Catch2
-  GIT_TAG        v3.11.0 # or a later release
-)
+add_executable(tests_vector tests/tests_vector.cpp)
+target_link_libraries(tests_vector PRIVATE Catch2)
 
-FetchContent_MakeAvailable(Catch2)
+add_executable(tests_vector_iterator tests/tests_vector_iterator.cpp)
+target_link_libraries(tests_vector_iterator PRIVATE Catch2)
 
-add_executable(tests tests/tests_vector.cpp)
+# Enable CTest
+enable_testing()
 
-target_link_libraries(tests PRIVATE Catch2::Catch2WithMain)
-
-include(CTest)
-include(Catch)
-catch_discover_tests(tests)
-
-
+add_test(NAME VectorTests COMMAND tests_vector)
+add_test(NAME VectorIteratorTests COMMAND tests_vector_iterator)

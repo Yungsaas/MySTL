@@ -359,3 +359,392 @@ TEST_CASE("demonstration - generic algorithm") {
     REQUIRE(sum1 == sum2);
     REQUIRE(sum1 == 6);
 }
+
+// ============================================================
+// EDGE CASE TESTS - EMPTY VECTOR
+// ============================================================
+
+TEST_CASE("edge case - empty vector iterators equal") {
+    mystl::my_vector<int> v;
+    REQUIRE(v.begin() == v.end());
+    REQUIRE(v.cbegin() == v.cend());
+    REQUIRE(v.rbegin() == v.rend());
+    REQUIRE(v.crbegin() == v.crend());
+}
+
+TEST_CASE("edge case - empty vector iterator distance") {
+    mystl::my_vector<int> v;
+    REQUIRE(std::distance(v.begin(), v.end()) == 0);
+    REQUIRE(std::distance(v.rbegin(), v.rend()) == 0);
+}
+
+TEST_CASE("edge case - empty vector with algorithms") {
+    mystl::my_vector<int> v;
+    
+    // std::find on empty vector should return end()
+    auto it = std::find(v.begin(), v.end(), 42);
+    REQUIRE(it == v.end());
+    
+    // std::count on empty vector should return 0
+    auto count = std::count(v.begin(), v.end(), 42);
+    REQUIRE(count == 0);
+    
+    // std::accumulate on empty vector should return initial value
+    auto sum = std::accumulate(v.begin(), v.end(), 100);
+    REQUIRE(sum == 100);
+}
+
+// ============================================================
+// EDGE CASE TESTS - SINGLE ELEMENT
+// ============================================================
+
+TEST_CASE("edge case - single element vector") {
+    mystl::my_vector<int> v;
+    v.push_back(42);
+    
+    REQUIRE(v.begin() != v.end());
+    REQUIRE(*v.begin() == 42);
+    
+    auto it = v.begin();
+    ++it;
+    REQUIRE(it == v.end());
+}
+
+TEST_CASE("edge case - single element reverse iteration") {
+    mystl::my_vector<int> v;
+    v.push_back(99);
+    
+    auto rit = v.rbegin();
+    REQUIRE(*rit == 99);
+    ++rit;
+    REQUIRE(rit == v.rend());
+}
+
+// ============================================================
+// EDGE CASE TESTS - ITERATOR INVALIDATION
+// ============================================================
+
+TEST_CASE("edge case - iterator after push_back may invalidate") {
+    mystl::my_vector<int> v;
+    v.reserve(2);  // Reserve exactly 2 elements
+    v.push_back(1);
+    v.push_back(2);
+    
+    auto it = v.begin();
+    REQUIRE(*it == 1);
+    
+    // This push_back will trigger reallocation, potentially invalidating 'it'
+    v.push_back(3);
+    
+    // Note: After reallocation, old iterators are invalid
+    // We need to get a fresh iterator
+    auto new_it = v.begin();
+    REQUIRE(*new_it == 1);
+    REQUIRE(v.size() == 3);
+}
+
+TEST_CASE("edge case - iterator after pop_back") {
+    mystl::my_vector<int> v;
+    v.push_back(1);
+    v.push_back(2);
+    v.push_back(3);
+    
+    auto it = v.begin();
+    std::advance(it, 2);  // Points to element at index 2 (value 3)
+    REQUIRE(*it == 3);
+    
+    v.pop_back();  // Removes element at index 2
+    
+    // 'it' now points to one-past-end, which is undefined behavior to dereference
+    // We can only check that it equals end()
+    REQUIRE(it == v.end());
+}
+
+TEST_CASE("edge case - iterator after clear") {
+    mystl::my_vector<int> v;
+    v.push_back(1);
+    v.push_back(2);
+    
+    auto it = v.begin();
+    v.clear();
+    
+    // After clear, old iterators are invalid
+    // begin() should equal end() for empty vector
+    REQUIRE(v.begin() == v.end());
+    REQUIRE(v.size() == 0);
+}
+
+// ============================================================
+// EDGE CASE TESTS - ITERATOR ARITHMETIC
+// ============================================================
+
+TEST_CASE("edge case - iterator arithmetic with zero") {
+    mystl::my_vector<int> v;
+    v.push_back(1);
+    v.push_back(2);
+    v.push_back(3);
+    
+    auto it = v.begin();
+    auto same_it = it + 0;
+    REQUIRE(it == same_it);
+    REQUIRE(*same_it == 1);
+}
+
+TEST_CASE("edge case - iterator arithmetic to end") {
+    mystl::my_vector<int> v;
+    v.push_back(1);
+    v.push_back(2);
+    v.push_back(3);
+    
+    auto it = v.begin() + 3;
+    REQUIRE(it == v.end());
+}
+
+TEST_CASE("edge case - iterator subtraction") {
+    mystl::my_vector<int> v;
+    v.push_back(1);
+    v.push_back(2);
+    v.push_back(3);
+    
+    auto diff = v.end() - v.begin();
+    REQUIRE(diff == 3);
+    
+    auto it1 = v.begin();
+    auto it2 = v.begin() + 2;
+    REQUIRE(it2 - it1 == 2);
+}
+
+// ============================================================
+// EDGE CASE TESTS - REVERSE ITERATORS
+// ============================================================
+
+TEST_CASE("edge case - reverse iterator on single element") {
+    mystl::my_vector<int> v;
+    v.push_back(42);
+    
+    auto rit = v.rbegin();
+    REQUIRE(*rit == 42);
+    ++rit;
+    REQUIRE(rit == v.rend());
+}
+
+TEST_CASE("edge case - reverse iterator distance") {
+    mystl::my_vector<int> v;
+    v.push_back(1);
+    v.push_back(2);
+    v.push_back(3);
+    v.push_back(4);
+    
+    auto dist = std::distance(v.rbegin(), v.rend());
+    REQUIRE(dist == 4);
+}
+
+TEST_CASE("edge case - mixing forward and reverse iterators") {
+    mystl::my_vector<int> v;
+    v.push_back(1);
+    v.push_back(2);
+    v.push_back(3);
+    
+    // Forward iteration
+    std::vector<int> forward_result;
+    for(auto it = v.begin(); it != v.end(); ++it) {
+        forward_result.push_back(*it);
+    }
+    
+    // Reverse iteration
+    std::vector<int> reverse_result;
+    for(auto rit = v.rbegin(); rit != v.rend(); ++rit) {
+        reverse_result.push_back(*rit);
+    }
+    
+    // Results should be mirrors of each other
+    REQUIRE(forward_result[0] == reverse_result[2]);
+    REQUIRE(forward_result[1] == reverse_result[1]);
+    REQUIRE(forward_result[2] == reverse_result[0]);
+}
+
+// ============================================================
+// STRESS TESTS - LARGE DATA
+// ============================================================
+
+TEST_CASE("stress test - large vector iteration") {
+    mystl::my_vector<int> v;
+    const size_t large_size = 10000;
+    
+    for(size_t i = 0; i < large_size; i++) {
+        v.push_back(static_cast<int>(i));
+    }
+    
+    // Forward iteration
+    size_t count = 0;
+    for(auto it = v.begin(); it != v.end(); ++it) {
+        REQUIRE(*it == static_cast<int>(count));
+        count++;
+    }
+    REQUIRE(count == large_size);
+    
+    // Reverse iteration
+    count = large_size;
+    for(auto rit = v.rbegin(); rit != v.rend(); ++rit) {
+        count--;
+        REQUIRE(*rit == static_cast<int>(count));
+    }
+    REQUIRE(count == 0);
+}
+
+TEST_CASE("stress test - iterator with frequent modifications") {
+    mystl::my_vector<int> v;
+    
+    // Add many elements
+    for(int i = 0; i < 1000; i++) {
+        v.push_back(i);
+    }
+    
+    // Verify all elements
+    int expected = 0;
+    for(auto it = v.begin(); it != v.end(); ++it, ++expected) {
+        REQUIRE(*it == expected);
+    }
+}
+
+TEST_CASE("stress test - STL algorithm on large vector") {
+    mystl::my_vector<int> v;
+    
+    for(int i = 1; i <= 1000; i++) {
+        v.push_back(i);
+    }
+    
+    // Test std::find on last element (worst case)
+    auto it = std::find(v.begin(), v.end(), 1000);
+    REQUIRE(it != v.end());
+    REQUIRE(*it == 1000);
+    
+    // Test std::accumulate
+    int sum = std::accumulate(v.begin(), v.end(), 0);
+    REQUIRE(sum == 500500);  // Sum of 1 to 1000
+}
+
+// ============================================================
+// CONST CORRECTNESS TESTS
+// ============================================================
+
+TEST_CASE("const correctness - const_iterator from const vector") {
+    const mystl::my_vector<int> v = []() {
+        mystl::my_vector<int> temp;
+        temp.push_back(1);
+        temp.push_back(2);
+        temp.push_back(3);
+        return temp;
+    }();
+    
+    int sum = 0;
+    for(auto it = v.begin(); it != v.end(); ++it) {
+        sum += *it;
+    }
+    REQUIRE(sum == 6);
+}
+
+TEST_CASE("const correctness - cbegin/cend on mutable vector") {
+    mystl::my_vector<int> v;
+    v.push_back(10);
+    v.push_back(20);
+    
+    // cbegin()/cend() should return const_iterator even on non-const vector
+    auto it = v.cbegin();
+    REQUIRE(*it == 10);
+    // *it = 100;  // Should not compile
+}
+
+// ============================================================
+// ALGORITHM COMPATIBILITY EDGE CASES
+// ============================================================
+
+TEST_CASE("algorithm edge case - std::find_if with no match") {
+    mystl::my_vector<int> v;
+    v.push_back(1);
+    v.push_back(3);
+    v.push_back(5);
+    
+    auto it = std::find_if(v.begin(), v.end(), [](int x) { return x % 2 == 0; });
+    REQUIRE(it == v.end());
+}
+
+TEST_CASE("algorithm edge case - std::all_of on empty") {
+    mystl::my_vector<int> v;
+    
+    // std::all_of returns true for empty range (vacuous truth)
+    bool result = std::all_of(v.begin(), v.end(), [](int x) { return x > 0; });
+    REQUIRE(result == true);
+}
+
+TEST_CASE("algorithm edge case - std::none_of") {
+    mystl::my_vector<int> v;
+    v.push_back(1);
+    v.push_back(3);
+    v.push_back(5);
+    
+    bool result = std::none_of(v.begin(), v.end(), [](int x) { return x % 2 == 0; });
+    REQUIRE(result == true);
+}
+
+TEST_CASE("algorithm edge case - std::min_element on single element") {
+    mystl::my_vector<int> v;
+    v.push_back(42);
+    
+    auto it = std::min_element(v.begin(), v.end());
+    REQUIRE(it != v.end());
+    REQUIRE(*it == 42);
+}
+
+// ============================================================
+// POTENTIAL BUG TESTS - BOUNDARY CONDITIONS
+// ============================================================
+
+TEST_CASE("boundary - dereferencing begin on empty (should not crash in tests)") {
+    mystl::my_vector<int> v;
+    // Don't actually dereference - this would be UB
+    // Just verify iterators are equal
+    REQUIRE(v.begin() == v.end());
+}
+
+TEST_CASE("boundary - iterator equality after multiple increments") {
+    mystl::my_vector<int> v;
+    v.push_back(1);
+    v.push_back(2);
+    
+    auto it1 = v.begin();
+    auto it2 = v.begin();
+    
+    ++it1;
+    ++it2;
+    
+    REQUIRE(it1 == it2);
+    REQUIRE(*it1 == *it2);
+}
+
+TEST_CASE("boundary - const and non-const iterator comparison") {
+    mystl::my_vector<int> v;
+    v.push_back(1);
+    
+    auto it = v.begin();
+    auto cit = v.cbegin();
+    
+    // These should be comparable (implicit conversion)
+    REQUIRE(it == cit);
+}
+
+TEST_CASE("boundary - reverse iterator base") {
+    mystl::my_vector<int> v;
+    v.push_back(1);
+    v.push_back(2);
+    v.push_back(3);
+    
+    auto rit = v.rbegin();
+    ++rit;  // Points to second-to-last element (2)
+    
+    // .base() returns the underlying forward iterator
+    auto base = rit.base();
+    // base points one position ahead in forward iteration
+    --base;
+    REQUIRE(*base == 2);
+}

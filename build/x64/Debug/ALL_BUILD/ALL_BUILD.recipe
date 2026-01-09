@@ -5,7 +5,10 @@
       <FullPath>C:\Users\miksh\Documents\GitHub\MySTL\build\x64\Debug\ZERO_CHECK</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>C:\Users\miksh\Documents\GitHub\MySTL\build\Debug\tests.exe</FullPath>
+      <FullPath>C:\Users\miksh\Documents\GitHub\MySTL\build\Debug\tests_vector.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\miksh\Documents\GitHub\MySTL\build\Debug\tests_vector_iterator.exe</FullPath>
     </ProjectOutput>
     <ProjectOutput>
       <FullPath>C:\Users\miksh\Documents\GitHub\MySTL\build\x64\Debug\ALL_BUILD</FullPath>

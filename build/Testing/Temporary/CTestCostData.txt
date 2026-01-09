@@ -223,29 +223,31 @@ vector 0 0
 vector 0 0
 vector 0 0
 vector 0 0
-vector destructor cleans up memory 1 18.0894
-vector deep copy constructor 1 0.0380218
-vector push_back after exceeding reserved capacity 1 0.034967
-vector push_back on empty vector 1 0.0350378
-vector self assignment 1 0.0366498
-vector default constructor 1 0.0350475
-vector pop_back throws on empty 1 0.0358808
-vector move assignment 1 0.0364112
-vector access out of bounds 1 0.0361251
-vector reserve increases capacity but not size 1 0.0368582
-vector copy assignment empty to non-empty 1 0.0354463
-vector inequality operator 1 0.0361534
-vector large push_back 1 0.0451693
-vector equality operator 1 0.0371404
-vector access after pop_back 1 0.0356746
-vector move constructor 1 0.0357429
-vector move constructor and assignment 1 0.0371666
-vector push_back after reserve 1 0.0345332
-vector push_back increases size 1 0.0369354
-vector clear resets size but not capacity 1 0.0354109
-vector copy constructor 1 0.0362214
-vector pop_back removes last element 1 0.0369552
-vector copy assignment 1 0.0356162
-vector move constructor with large data 1 0.0372226
-vector reserve with smaller capacity 1 0.0360195
+vector 0 0
+vector 0 0
+vector 0 0
+vector 0 0
+vector 0 0
+vector 0 0
+vector 0 0
+vector 0 0
+vector 0 0
+vector 0 0
+vector 0 0
+vector 0 0
+vector 0 0
+vector 0 0
+vector 0 0
+vector 0 0
+vector 0 0
+vector 0 0
+vector 0 0
+vector 0 0
+vector 0 0
+vector 0 0
+vector 0 0
+vector 0 0
+vector 0 0
+VectorTests 3 0.0151453
+VectorIteratorTests 3 0.0242488
 ---

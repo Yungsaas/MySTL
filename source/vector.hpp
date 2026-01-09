@@ -233,12 +233,12 @@ class my_vector
     using const_reverse_iterator = std::reverse_iterator<const_iterator>;
 
     //reverse iterator methods
-    reverse_iterator rbegin() {return end();}
-    reverse_iterator rend() {return begin();}
-    const_reverse_iterator rbegin() const {return end();}
-    const_reverse_iterator rend() const {return begin();}
-    const_reverse_iterator crbegin() const {return end();}
-    const_reverse_iterator crend() const {return begin();}
+    reverse_iterator rbegin() { return reverse_iterator(end()); }
+    reverse_iterator rend() { return reverse_iterator(begin()); }
+    const_reverse_iterator rbegin() const { return const_reverse_iterator(end()); }
+    const_reverse_iterator rend() const { return const_reverse_iterator(begin()); }
+    const_reverse_iterator crbegin() const { return const_reverse_iterator(end()); }
+    const_reverse_iterator crend() const { return const_reverse_iterator(begin()); }
 
     private:
     //pointer to storage for elements

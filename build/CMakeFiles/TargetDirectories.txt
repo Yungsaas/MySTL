@@ -1,13 +1,6 @@
-C:/Users/miksh/Documents/GitHub/MySTL/build/CMakeFiles/tests.dir
-C:/Users/miksh/Documents/GitHub/MySTL/build/CMakeFiles/Experimental.dir
-C:/Users/miksh/Documents/GitHub/MySTL/build/CMakeFiles/Nightly.dir
-C:/Users/miksh/Documents/GitHub/MySTL/build/CMakeFiles/Continuous.dir
-C:/Users/miksh/Documents/GitHub/MySTL/build/CMakeFiles/NightlyMemoryCheck.dir
+C:/Users/miksh/Documents/GitHub/MySTL/build/CMakeFiles/Catch2.dir
+C:/Users/miksh/Documents/GitHub/MySTL/build/CMakeFiles/tests_vector.dir
+C:/Users/miksh/Documents/GitHub/MySTL/build/CMakeFiles/tests_vector_iterator.dir
 C:/Users/miksh/Documents/GitHub/MySTL/build/CMakeFiles/RUN_TESTS.dir
 C:/Users/miksh/Documents/GitHub/MySTL/build/CMakeFiles/ALL_BUILD.dir
 C:/Users/miksh/Documents/GitHub/MySTL/build/CMakeFiles/ZERO_CHECK.dir
-C:/Users/miksh/Documents/GitHub/MySTL/build/_deps/catch2-build/CMakeFiles/RUN_TESTS.dir
-C:/Users/miksh/Documents/GitHub/MySTL/build/_deps/catch2-build/CMakeFiles/ALL_BUILD.dir
-C:/Users/miksh/Documents/GitHub/MySTL/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir
-C:/Users/miksh/Documents/GitHub/MySTL/build/_deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir
-C:/Users/miksh/Documents/GitHub/MySTL/build/_deps/catch2-build/src/CMakeFiles/RUN_TESTS.dir
