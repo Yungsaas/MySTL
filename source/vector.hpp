@@ -1,5 +1,6 @@
 #pragma once
 #include <cstddef>
+#include <iterator>
 #include <stdexcept>
 #include <utility>
 
@@ -11,6 +12,7 @@ template<typename T>
 class my_vector
 {
     public:
+
     //default constructor
     my_vector(): _data(nullptr), _size(0), _cap(0){}
     
@@ -213,6 +215,30 @@ class my_vector
     {
         return !(*this == other);
     }
+
+    //iterators
+    using iterator = T*;
+    using const_iterator = const T*;
+
+    //iterator methods
+    iterator begin() {return _data;}
+    iterator end() {return _data+_size;}
+    const_iterator begin() const {return _data;}
+    const_iterator end() const {return _data+_size;}
+    const_iterator cbegin() const {return _data;}
+    const_iterator cend() const {return _data+_size;}
+
+    //reverse iterators -> using std::reverse_iterator, might make my own in the future
+    using reverse_iterator = std::reverse_iterator<iterator>;
+    using const_reverse_iterator = std::reverse_iterator<const_iterator>;
+
+    //reverse iterator methods
+    reverse_iterator rbegin() {return end();}
+    reverse_iterator rend() {return begin();}
+    const_reverse_iterator rbegin() const {return end();}
+    const_reverse_iterator rend() const {return begin();}
+    const_reverse_iterator crbegin() const {return end();}
+    const_reverse_iterator crend() const {return begin();}
 
     private:
     //pointer to storage for elements

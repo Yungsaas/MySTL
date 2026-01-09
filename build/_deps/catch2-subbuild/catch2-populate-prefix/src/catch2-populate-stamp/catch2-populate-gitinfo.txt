@@ -6,7 +6,7 @@ method=git
 command=C:/Program Files/CMake/bin/cmake.exe;-DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE;-P;C:/Users/miksh/Documents/GitHub/MySTL/build/_deps/catch2-subbuild/catch2-populate-prefix/tmp/catch2-populate-gitclone.cmake
 source_dir=C:/Users/miksh/Documents/GitHub/MySTL/build/_deps/catch2-src
 work_dir=C:/Users/miksh/Documents/GitHub/MySTL/build/_deps
-repository=https://github.com/catchorg/Catch2.git
+repository=https://github.com/catchorg/Catch2
 remote=origin
 init_submodules=TRUE
 recurse_submodules=--recursive

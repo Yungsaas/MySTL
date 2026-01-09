@@ -36,7 +36,7 @@ set(number_of_tries 0)
 while(error_code AND number_of_tries LESS 3)
   execute_process(
     COMMAND "C:/Program Files/Git/cmd/git.exe"
-            clone --no-checkout --config "advice.detachedHead=false" "https://github.com/catchorg/Catch2.git" "catch2-src"
+            clone --no-checkout --config "advice.detachedHead=false" "https://github.com/catchorg/Catch2" "catch2-src"
     WORKING_DIRECTORY "C:/Users/miksh/Documents/GitHub/MySTL/build/_deps"
     RESULT_VARIABLE error_code
     ${maybe_show_command}
@@ -47,7 +47,7 @@ if(number_of_tries GREATER 1)
   message(NOTICE "Had to git clone more than once: ${number_of_tries} times.")
 endif()
 if(error_code)
-  message(FATAL_ERROR "Failed to clone repository: 'https://github.com/catchorg/Catch2.git'")
+  message(FATAL_ERROR "Failed to clone repository: 'https://github.com/catchorg/Catch2'")
 endif()
 
 execute_process(

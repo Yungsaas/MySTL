@@ -1,35 +1,35 @@
-Start testing: Nov 21 13:55 W. Europe Standard Time
+Start testing: Jan 09 16:22 W. Europe Standard Time
 ----------------------------------------------------------
 1/25 Testing: vector destructor cleans up memory
 1/25 Test: vector destructor cleans up memory
 Command: "C:/Users/miksh/Documents/GitHub/MySTL/build/Debug/tests.exe" "vector destructor cleans up memory"
 Directory: C:/Users/miksh/Documents/GitHub/MySTL/build
-"vector destructor cleans up memory" start time: Nov 21 13:55 W. Europe Standard Time
+"vector destructor cleans up memory" start time: Jan 09 16:22 W. Europe Standard Time
 Output:
 ----------------------------------------------------------
 Filters: "vector destructor cleans up memory"
-Randomness seeded to: 1732019355
+Randomness seeded to: 460512509
 ===============================================================================
 test cases: 1 | 1 passed
 assertions: - none -
 
 <end of output>
-Test time =   0.04 sec
+Test time =  18.09 sec
 ----------------------------------------------------------
 Test Passed.
-"vector destructor cleans up memory" end time: Nov 21 13:55 W. Europe Standard Time
-"vector destructor cleans up memory" time elapsed: 00:00:00
+"vector destructor cleans up memory" end time: Jan 09 16:22 W. Europe Standard Time
+"vector destructor cleans up memory" time elapsed: 00:00:18
 ----------------------------------------------------------
 
 2/25 Testing: vector deep copy constructor
 2/25 Test: vector deep copy constructor
 Command: "C:/Users/miksh/Documents/GitHub/MySTL/build/Debug/tests.exe" "vector deep copy constructor"
 Directory: C:/Users/miksh/Documents/GitHub/MySTL/build
-"vector deep copy constructor" start time: Nov 21 13:55 W. Europe Standard Time
+"vector deep copy constructor" start time: Jan 09 16:22 W. Europe Standard Time
 Output:
 ----------------------------------------------------------
 Filters: "vector deep copy constructor"
-Randomness seeded to: 2449085822
+Randomness seeded to: 2588049017
 ===============================================================================
 All tests passed (3 assertions in 1 test case)
 
@@ -37,7 +37,7 @@ All tests passed (3 assertions in 1 test case)
 Test time =   0.04 sec
 ----------------------------------------------------------
 Test Passed.
-"vector deep copy constructor" end time: Nov 21 13:55 W. Europe Standard Time
+"vector deep copy constructor" end time: Jan 09 16:22 W. Europe Standard Time
 "vector deep copy constructor" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -45,11 +45,11 @@ Test Passed.
 3/25 Test: vector push_back after exceeding reserved capacity
 Command: "C:/Users/miksh/Documents/GitHub/MySTL/build/Debug/tests.exe" "vector push_back after exceeding reserved capacity"
 Directory: C:/Users/miksh/Documents/GitHub/MySTL/build
-"vector push_back after exceeding reserved capacity" start time: Nov 21 13:55 W. Europe Standard Time
+"vector push_back after exceeding reserved capacity" start time: Jan 09 16:22 W. Europe Standard Time
 Output:
 ----------------------------------------------------------
 Filters: "vector push_back after exceeding reserved capacity"
-Randomness seeded to: 4186250331
+Randomness seeded to: 2668324292
 ===============================================================================
 All tests passed (2 assertions in 1 test case)
 
@@ -57,7 +57,7 @@ All tests passed (2 assertions in 1 test case)
 Test time =   0.03 sec
 ----------------------------------------------------------
 Test Passed.
-"vector push_back after exceeding reserved capacity" end time: Nov 21 13:55 W. Europe Standard Time
+"vector push_back after exceeding reserved capacity" end time: Jan 09 16:22 W. Europe Standard Time
 "vector push_back after exceeding reserved capacity" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -65,19 +65,19 @@ Test Passed.
 4/25 Test: vector push_back on empty vector
 Command: "C:/Users/miksh/Documents/GitHub/MySTL/build/Debug/tests.exe" "vector push_back on empty vector"
 Directory: C:/Users/miksh/Documents/GitHub/MySTL/build
-"vector push_back on empty vector" start time: Nov 21 13:55 W. Europe Standard Time
+"vector push_back on empty vector" start time: Jan 09 16:22 W. Europe Standard Time
 Output:
 ----------------------------------------------------------
 Filters: "vector push_back on empty vector"
-Randomness seeded to: 618867321
+Randomness seeded to: 3419149922
 ===============================================================================
 All tests passed (2 assertions in 1 test case)
 
 <end of output>
-Test time =   0.03 sec
+Test time =   0.04 sec
 ----------------------------------------------------------
 Test Passed.
-"vector push_back on empty vector" end time: Nov 21 13:55 W. Europe Standard Time
+"vector push_back on empty vector" end time: Jan 09 16:22 W. Europe Standard Time
 "vector push_back on empty vector" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -85,19 +85,19 @@ Test Passed.
 5/25 Test: vector self assignment
 Command: "C:/Users/miksh/Documents/GitHub/MySTL/build/Debug/tests.exe" "vector self assignment"
 Directory: C:/Users/miksh/Documents/GitHub/MySTL/build
-"vector self assignment" start time: Nov 21 13:55 W. Europe Standard Time
+"vector self assignment" start time: Jan 09 16:22 W. Europe Standard Time
 Output:
 ----------------------------------------------------------
 Filters: "vector self assignment"
-Randomness seeded to: 942905581
+Randomness seeded to: 242980189
 ===============================================================================
 All tests passed (3 assertions in 1 test case)
 
 <end of output>
-Test time =   0.03 sec
+Test time =   0.04 sec
 ----------------------------------------------------------
 Test Passed.
-"vector self assignment" end time: Nov 21 13:55 W. Europe Standard Time
+"vector self assignment" end time: Jan 09 16:22 W. Europe Standard Time
 "vector self assignment" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -105,19 +105,19 @@ Test Passed.
 6/25 Test: vector default constructor
 Command: "C:/Users/miksh/Documents/GitHub/MySTL/build/Debug/tests.exe" "vector default constructor"
 Directory: C:/Users/miksh/Documents/GitHub/MySTL/build
-"vector default constructor" start time: Nov 21 13:55 W. Europe Standard Time
+"vector default constructor" start time: Jan 09 16:22 W. Europe Standard Time
 Output:
 ----------------------------------------------------------
 Filters: "vector default constructor"
-Randomness seeded to: 3894333483
+Randomness seeded to: 329088615
 ===============================================================================
 All tests passed (3 assertions in 1 test case)
 
 <end of output>
-Test time =   0.03 sec
+Test time =   0.04 sec
 ----------------------------------------------------------
 Test Passed.
-"vector default constructor" end time: Nov 21 13:55 W. Europe Standard Time
+"vector default constructor" end time: Jan 09 16:22 W. Europe Standard Time
 "vector default constructor" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -125,19 +125,19 @@ Test Passed.
 7/25 Test: vector pop_back throws on empty
 Command: "C:/Users/miksh/Documents/GitHub/MySTL/build/Debug/tests.exe" "vector pop_back throws on empty"
 Directory: C:/Users/miksh/Documents/GitHub/MySTL/build
-"vector pop_back throws on empty" start time: Nov 21 13:55 W. Europe Standard Time
+"vector pop_back throws on empty" start time: Jan 09 16:22 W. Europe Standard Time
 Output:
 ----------------------------------------------------------
 Filters: "vector pop_back throws on empty"
-Randomness seeded to: 1949099145
+Randomness seeded to: 666797303
 ===============================================================================
 All tests passed (1 assertion in 1 test case)
 
 <end of output>
-Test time =   0.03 sec
+Test time =   0.04 sec
 ----------------------------------------------------------
 Test Passed.
-"vector pop_back throws on empty" end time: Nov 21 13:55 W. Europe Standard Time
+"vector pop_back throws on empty" end time: Jan 09 16:22 W. Europe Standard Time
 "vector pop_back throws on empty" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -145,19 +145,19 @@ Test Passed.
 8/25 Test: vector move assignment
 Command: "C:/Users/miksh/Documents/GitHub/MySTL/build/Debug/tests.exe" "vector move assignment"
 Directory: C:/Users/miksh/Documents/GitHub/MySTL/build
-"vector move assignment" start time: Nov 21 13:55 W. Europe Standard Time
+"vector move assignment" start time: Jan 09 16:22 W. Europe Standard Time
 Output:
 ----------------------------------------------------------
 Filters: "vector move assignment"
-Randomness seeded to: 291283933
+Randomness seeded to: 628726915
 ===============================================================================
 All tests passed (4 assertions in 1 test case)
 
 <end of output>
-Test time =   0.03 sec
+Test time =   0.04 sec
 ----------------------------------------------------------
 Test Passed.
-"vector move assignment" end time: Nov 21 13:55 W. Europe Standard Time
+"vector move assignment" end time: Jan 09 16:22 W. Europe Standard Time
 "vector move assignment" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -165,19 +165,19 @@ Test Passed.
 9/25 Test: vector access out of bounds
 Command: "C:/Users/miksh/Documents/GitHub/MySTL/build/Debug/tests.exe" "vector access out of bounds"
 Directory: C:/Users/miksh/Documents/GitHub/MySTL/build
-"vector access out of bounds" start time: Nov 21 13:55 W. Europe Standard Time
+"vector access out of bounds" start time: Jan 09 16:22 W. Europe Standard Time
 Output:
 ----------------------------------------------------------
 Filters: "vector access out of bounds"
-Randomness seeded to: 3574980664
+Randomness seeded to: 1240881943
 ===============================================================================
 All tests passed (1 assertion in 1 test case)
 
 <end of output>
-Test time =   0.03 sec
+Test time =   0.04 sec
 ----------------------------------------------------------
 Test Passed.
-"vector access out of bounds" end time: Nov 21 13:55 W. Europe Standard Time
+"vector access out of bounds" end time: Jan 09 16:22 W. Europe Standard Time
 "vector access out of bounds" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -185,19 +185,19 @@ Test Passed.
 10/25 Test: vector reserve increases capacity but not size
 Command: "C:/Users/miksh/Documents/GitHub/MySTL/build/Debug/tests.exe" "vector reserve increases capacity but not size"
 Directory: C:/Users/miksh/Documents/GitHub/MySTL/build
-"vector reserve increases capacity but not size" start time: Nov 21 13:55 W. Europe Standard Time
+"vector reserve increases capacity but not size" start time: Jan 09 16:22 W. Europe Standard Time
 Output:
 ----------------------------------------------------------
 Filters: "vector reserve increases capacity but not size"
-Randomness seeded to: 236832985
+Randomness seeded to: 4235029500
 ===============================================================================
 All tests passed (2 assertions in 1 test case)
 
 <end of output>
-Test time =   0.03 sec
+Test time =   0.04 sec
 ----------------------------------------------------------
 Test Passed.
-"vector reserve increases capacity but not size" end time: Nov 21 13:55 W. Europe Standard Time
+"vector reserve increases capacity but not size" end time: Jan 09 16:22 W. Europe Standard Time
 "vector reserve increases capacity but not size" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -205,11 +205,11 @@ Test Passed.
 11/25 Test: vector copy assignment empty to non-empty
 Command: "C:/Users/miksh/Documents/GitHub/MySTL/build/Debug/tests.exe" "vector copy assignment empty to non-empty"
 Directory: C:/Users/miksh/Documents/GitHub/MySTL/build
-"vector copy assignment empty to non-empty" start time: Nov 21 13:55 W. Europe Standard Time
+"vector copy assignment empty to non-empty" start time: Jan 09 16:22 W. Europe Standard Time
 Output:
 ----------------------------------------------------------
 Filters: "vector copy assignment empty to non-empty"
-Randomness seeded to: 4171214403
+Randomness seeded to: 3200054159
 ===============================================================================
 All tests passed (2 assertions in 1 test case)
 
@@ -217,7 +217,7 @@ All tests passed (2 assertions in 1 test case)
 Test time =   0.04 sec
 ----------------------------------------------------------
 Test Passed.
-"vector copy assignment empty to non-empty" end time: Nov 21 13:55 W. Europe Standard Time
+"vector copy assignment empty to non-empty" end time: Jan 09 16:22 W. Europe Standard Time
 "vector copy assignment empty to non-empty" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -225,11 +225,11 @@ Test Passed.
 12/25 Test: vector inequality operator
 Command: "C:/Users/miksh/Documents/GitHub/MySTL/build/Debug/tests.exe" "vector inequality operator"
 Directory: C:/Users/miksh/Documents/GitHub/MySTL/build
-"vector inequality operator" start time: Nov 21 13:55 W. Europe Standard Time
+"vector inequality operator" start time: Jan 09 16:22 W. Europe Standard Time
 Output:
 ----------------------------------------------------------
 Filters: "vector inequality operator"
-Randomness seeded to: 1291506626
+Randomness seeded to: 2095457678
 ===============================================================================
 All tests passed (1 assertion in 1 test case)
 
@@ -237,7 +237,7 @@ All tests passed (1 assertion in 1 test case)
 Test time =   0.04 sec
 ----------------------------------------------------------
 Test Passed.
-"vector inequality operator" end time: Nov 21 13:55 W. Europe Standard Time
+"vector inequality operator" end time: Jan 09 16:22 W. Europe Standard Time
 "vector inequality operator" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -245,19 +245,19 @@ Test Passed.
 13/25 Test: vector large push_back
 Command: "C:/Users/miksh/Documents/GitHub/MySTL/build/Debug/tests.exe" "vector large push_back"
 Directory: C:/Users/miksh/Documents/GitHub/MySTL/build
-"vector large push_back" start time: Nov 21 13:55 W. Europe Standard Time
+"vector large push_back" start time: Jan 09 16:22 W. Europe Standard Time
 Output:
 ----------------------------------------------------------
 Filters: "vector large push_back"
-Randomness seeded to: 2484038192
+Randomness seeded to: 1246280811
 ===============================================================================
 All tests passed (2 assertions in 1 test case)
 
 <end of output>
-Test time =   0.04 sec
+Test time =   0.05 sec
 ----------------------------------------------------------
 Test Passed.
-"vector large push_back" end time: Nov 21 13:55 W. Europe Standard Time
+"vector large push_back" end time: Jan 09 16:22 W. Europe Standard Time
 "vector large push_back" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -265,11 +265,11 @@ Test Passed.
 14/25 Test: vector equality operator
 Command: "C:/Users/miksh/Documents/GitHub/MySTL/build/Debug/tests.exe" "vector equality operator"
 Directory: C:/Users/miksh/Documents/GitHub/MySTL/build
-"vector equality operator" start time: Nov 21 13:55 W. Europe Standard Time
+"vector equality operator" start time: Jan 09 16:22 W. Europe Standard Time
 Output:
 ----------------------------------------------------------
 Filters: "vector equality operator"
-Randomness seeded to: 2512264632
+Randomness seeded to: 2270118873
 ===============================================================================
 All tests passed (1 assertion in 1 test case)
 
@@ -277,7 +277,7 @@ All tests passed (1 assertion in 1 test case)
 Test time =   0.04 sec
 ----------------------------------------------------------
 Test Passed.
-"vector equality operator" end time: Nov 21 13:55 W. Europe Standard Time
+"vector equality operator" end time: Jan 09 16:22 W. Europe Standard Time
 "vector equality operator" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -285,11 +285,11 @@ Test Passed.
 15/25 Test: vector access after pop_back
 Command: "C:/Users/miksh/Documents/GitHub/MySTL/build/Debug/tests.exe" "vector access after pop_back"
 Directory: C:/Users/miksh/Documents/GitHub/MySTL/build
-"vector access after pop_back" start time: Nov 21 13:55 W. Europe Standard Time
+"vector access after pop_back" start time: Jan 09 16:22 W. Europe Standard Time
 Output:
 ----------------------------------------------------------
 Filters: "vector access after pop_back"
-Randomness seeded to: 2907340386
+Randomness seeded to: 3733708657
 ===============================================================================
 All tests passed (3 assertions in 1 test case)
 
@@ -297,7 +297,7 @@ All tests passed (3 assertions in 1 test case)
 Test time =   0.04 sec
 ----------------------------------------------------------
 Test Passed.
-"vector access after pop_back" end time: Nov 21 13:55 W. Europe Standard Time
+"vector access after pop_back" end time: Jan 09 16:22 W. Europe Standard Time
 "vector access after pop_back" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -305,11 +305,11 @@ Test Passed.
 16/25 Test: vector move constructor
 Command: "C:/Users/miksh/Documents/GitHub/MySTL/build/Debug/tests.exe" "vector move constructor"
 Directory: C:/Users/miksh/Documents/GitHub/MySTL/build
-"vector move constructor" start time: Nov 21 13:55 W. Europe Standard Time
+"vector move constructor" start time: Jan 09 16:22 W. Europe Standard Time
 Output:
 ----------------------------------------------------------
 Filters: "vector move constructor"
-Randomness seeded to: 3021569641
+Randomness seeded to: 1580320430
 ===============================================================================
 All tests passed (4 assertions in 1 test case)
 
@@ -317,7 +317,7 @@ All tests passed (4 assertions in 1 test case)
 Test time =   0.04 sec
 ----------------------------------------------------------
 Test Passed.
-"vector move constructor" end time: Nov 21 13:55 W. Europe Standard Time
+"vector move constructor" end time: Jan 09 16:22 W. Europe Standard Time
 "vector move constructor" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -325,11 +325,11 @@ Test Passed.
 17/25 Test: vector move constructor and assignment
 Command: "C:/Users/miksh/Documents/GitHub/MySTL/build/Debug/tests.exe" "vector move constructor and assignment"
 Directory: C:/Users/miksh/Documents/GitHub/MySTL/build
-"vector move constructor and assignment" start time: Nov 21 13:55 W. Europe Standard Time
+"vector move constructor and assignment" start time: Jan 09 16:22 W. Europe Standard Time
 Output:
 ----------------------------------------------------------
 Filters: "vector move constructor and assignment"
-Randomness seeded to: 923767007
+Randomness seeded to: 512608280
 ===============================================================================
 All tests passed (5 assertions in 1 test case)
 
@@ -337,7 +337,7 @@ All tests passed (5 assertions in 1 test case)
 Test time =   0.04 sec
 ----------------------------------------------------------
 Test Passed.
-"vector move constructor and assignment" end time: Nov 21 13:55 W. Europe Standard Time
+"vector move constructor and assignment" end time: Jan 09 16:22 W. Europe Standard Time
 "vector move constructor and assignment" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -345,19 +345,19 @@ Test Passed.
 18/25 Test: vector push_back after reserve
 Command: "C:/Users/miksh/Documents/GitHub/MySTL/build/Debug/tests.exe" "vector push_back after reserve"
 Directory: C:/Users/miksh/Documents/GitHub/MySTL/build
-"vector push_back after reserve" start time: Nov 21 13:55 W. Europe Standard Time
+"vector push_back after reserve" start time: Jan 09 16:22 W. Europe Standard Time
 Output:
 ----------------------------------------------------------
 Filters: "vector push_back after reserve"
-Randomness seeded to: 3718237355
+Randomness seeded to: 401674798
 ===============================================================================
 All tests passed (2 assertions in 1 test case)
 
 <end of output>
-Test time =   0.04 sec
+Test time =   0.03 sec
 ----------------------------------------------------------
 Test Passed.
-"vector push_back after reserve" end time: Nov 21 13:55 W. Europe Standard Time
+"vector push_back after reserve" end time: Jan 09 16:22 W. Europe Standard Time
 "vector push_back after reserve" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -365,19 +365,19 @@ Test Passed.
 19/25 Test: vector push_back increases size
 Command: "C:/Users/miksh/Documents/GitHub/MySTL/build/Debug/tests.exe" "vector push_back increases size"
 Directory: C:/Users/miksh/Documents/GitHub/MySTL/build
-"vector push_back increases size" start time: Nov 21 13:55 W. Europe Standard Time
+"vector push_back increases size" start time: Jan 09 16:22 W. Europe Standard Time
 Output:
 ----------------------------------------------------------
 Filters: "vector push_back increases size"
-Randomness seeded to: 2908902864
+Randomness seeded to: 3581406808
 ===============================================================================
 All tests passed (3 assertions in 1 test case)
 
 <end of output>
-Test time =   0.03 sec
+Test time =   0.04 sec
 ----------------------------------------------------------
 Test Passed.
-"vector push_back increases size" end time: Nov 21 13:55 W. Europe Standard Time
+"vector push_back increases size" end time: Jan 09 16:22 W. Europe Standard Time
 "vector push_back increases size" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -385,11 +385,11 @@ Test Passed.
 20/25 Test: vector clear resets size but not capacity
 Command: "C:/Users/miksh/Documents/GitHub/MySTL/build/Debug/tests.exe" "vector clear resets size but not capacity"
 Directory: C:/Users/miksh/Documents/GitHub/MySTL/build
-"vector clear resets size but not capacity" start time: Nov 21 13:55 W. Europe Standard Time
+"vector clear resets size but not capacity" start time: Jan 09 16:22 W. Europe Standard Time
 Output:
 ----------------------------------------------------------
 Filters: "vector clear resets size but not capacity"
-Randomness seeded to: 3308728732
+Randomness seeded to: 2283891461
 ===============================================================================
 All tests passed (2 assertions in 1 test case)
 
@@ -397,7 +397,7 @@ All tests passed (2 assertions in 1 test case)
 Test time =   0.04 sec
 ----------------------------------------------------------
 Test Passed.
-"vector clear resets size but not capacity" end time: Nov 21 13:55 W. Europe Standard Time
+"vector clear resets size but not capacity" end time: Jan 09 16:22 W. Europe Standard Time
 "vector clear resets size but not capacity" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -405,11 +405,11 @@ Test Passed.
 21/25 Test: vector copy constructor
 Command: "C:/Users/miksh/Documents/GitHub/MySTL/build/Debug/tests.exe" "vector copy constructor"
 Directory: C:/Users/miksh/Documents/GitHub/MySTL/build
-"vector copy constructor" start time: Nov 21 13:55 W. Europe Standard Time
+"vector copy constructor" start time: Jan 09 16:22 W. Europe Standard Time
 Output:
 ----------------------------------------------------------
 Filters: "vector copy constructor"
-Randomness seeded to: 3576317911
+Randomness seeded to: 885290347
 ===============================================================================
 All tests passed (3 assertions in 1 test case)
 
@@ -417,7 +417,7 @@ All tests passed (3 assertions in 1 test case)
 Test time =   0.04 sec
 ----------------------------------------------------------
 Test Passed.
-"vector copy constructor" end time: Nov 21 13:55 W. Europe Standard Time
+"vector copy constructor" end time: Jan 09 16:22 W. Europe Standard Time
 "vector copy constructor" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -425,19 +425,19 @@ Test Passed.
 22/25 Test: vector pop_back removes last element
 Command: "C:/Users/miksh/Documents/GitHub/MySTL/build/Debug/tests.exe" "vector pop_back removes last element"
 Directory: C:/Users/miksh/Documents/GitHub/MySTL/build
-"vector pop_back removes last element" start time: Nov 21 13:55 W. Europe Standard Time
+"vector pop_back removes last element" start time: Jan 09 16:22 W. Europe Standard Time
 Output:
 ----------------------------------------------------------
 Filters: "vector pop_back removes last element"
-Randomness seeded to: 840917163
+Randomness seeded to: 58679171
 ===============================================================================
 All tests passed (2 assertions in 1 test case)
 
 <end of output>
-Test time =   0.03 sec
+Test time =   0.04 sec
 ----------------------------------------------------------
 Test Passed.
-"vector pop_back removes last element" end time: Nov 21 13:55 W. Europe Standard Time
+"vector pop_back removes last element" end time: Jan 09 16:22 W. Europe Standard Time
 "vector pop_back removes last element" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -445,11 +445,11 @@ Test Passed.
 23/25 Test: vector copy assignment
 Command: "C:/Users/miksh/Documents/GitHub/MySTL/build/Debug/tests.exe" "vector copy assignment"
 Directory: C:/Users/miksh/Documents/GitHub/MySTL/build
-"vector copy assignment" start time: Nov 21 13:55 W. Europe Standard Time
+"vector copy assignment" start time: Jan 09 16:22 W. Europe Standard Time
 Output:
 ----------------------------------------------------------
 Filters: "vector copy assignment"
-Randomness seeded to: 1384873017
+Randomness seeded to: 3868883617
 ===============================================================================
 All tests passed (3 assertions in 1 test case)
 
@@ -457,7 +457,7 @@ All tests passed (3 assertions in 1 test case)
 Test time =   0.04 sec
 ----------------------------------------------------------
 Test Passed.
-"vector copy assignment" end time: Nov 21 13:55 W. Europe Standard Time
+"vector copy assignment" end time: Jan 09 16:22 W. Europe Standard Time
 "vector copy assignment" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -465,11 +465,11 @@ Test Passed.
 24/25 Test: vector move constructor with large data
 Command: "C:/Users/miksh/Documents/GitHub/MySTL/build/Debug/tests.exe" "vector move constructor with large data"
 Directory: C:/Users/miksh/Documents/GitHub/MySTL/build
-"vector move constructor with large data" start time: Nov 21 13:55 W. Europe Standard Time
+"vector move constructor with large data" start time: Jan 09 16:22 W. Europe Standard Time
 Output:
 ----------------------------------------------------------
 Filters: "vector move constructor with large data"
-Randomness seeded to: 2728083109
+Randomness seeded to: 2560559972
 ===============================================================================
 All tests passed (2 assertions in 1 test case)
 
@@ -477,7 +477,7 @@ All tests passed (2 assertions in 1 test case)
 Test time =   0.04 sec
 ----------------------------------------------------------
 Test Passed.
-"vector move constructor with large data" end time: Nov 21 13:55 W. Europe Standard Time
+"vector move constructor with large data" end time: Jan 09 16:22 W. Europe Standard Time
 "vector move constructor with large data" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -485,11 +485,11 @@ Test Passed.
 25/25 Test: vector reserve with smaller capacity
 Command: "C:/Users/miksh/Documents/GitHub/MySTL/build/Debug/tests.exe" "vector reserve with smaller capacity"
 Directory: C:/Users/miksh/Documents/GitHub/MySTL/build
-"vector reserve with smaller capacity" start time: Nov 21 13:55 W. Europe Standard Time
+"vector reserve with smaller capacity" start time: Jan 09 16:22 W. Europe Standard Time
 Output:
 ----------------------------------------------------------
 Filters: "vector reserve with smaller capacity"
-Randomness seeded to: 2738752426
+Randomness seeded to: 2549592176
 ===============================================================================
 All tests passed (1 assertion in 1 test case)
 
@@ -497,8 +497,8 @@ All tests passed (1 assertion in 1 test case)
 Test time =   0.04 sec
 ----------------------------------------------------------
 Test Passed.
-"vector reserve with smaller capacity" end time: Nov 21 13:55 W. Europe Standard Time
+"vector reserve with smaller capacity" end time: Jan 09 16:22 W. Europe Standard Time
 "vector reserve with smaller capacity" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Nov 21 13:55 W. Europe Standard Time
+End testing: Jan 09 16:22 W. Europe Standard Time
