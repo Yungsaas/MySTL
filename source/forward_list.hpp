@@ -298,6 +298,31 @@ public:
     // return iterator to element after deleted one
     return result;
   }
+
+  // equality operator
+  bool operator==(const my_forward_list &other) const {
+    // different sizes means not equal
+    if (_size != other._size)
+      return false;
+
+    // compare element by element
+    Node *current1 = _before_head->next;
+    Node *current2 = other._before_head->next;
+
+    while (current1 != nullptr) {
+      if (current1->data != current2->data)
+        return false;
+      current1 = current1->next;
+      current2 = current2->next;
+    }
+
+    return true;
+  }
+
+  // inequality operator
+  bool operator!=(const my_forward_list &other) const {
+    return !(*this == other);
+  }
 };
 
 } // namespace mystl
