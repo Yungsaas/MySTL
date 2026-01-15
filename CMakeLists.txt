@@ -16,8 +16,12 @@ target_link_libraries(tests_vector PRIVATE Catch2)
 add_executable(tests_vector_iterator tests/tests_vector_iterator.cpp)
 target_link_libraries(tests_vector_iterator PRIVATE Catch2)
 
+add_executable(forward_list_tests tests/forward_list_tests.cpp)
+target_link_libraries(forward_list_tests PRIVATE Catch2)
+
 # Enable CTest
 enable_testing()
 
 add_test(NAME VectorTests COMMAND tests_vector)
 add_test(NAME VectorIteratorTests COMMAND tests_vector_iterator)
+add_test(NAME ForwardListTests COMMAND forward_list_tests)
