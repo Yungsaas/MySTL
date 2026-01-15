@@ -74,7 +74,7 @@ public:
   my_forward_list(my_forward_list &&other) noexcept
       : _before_head(other._before_head), _size(other._size) {
     // leave other in valid empty state
-    other._before_head = new Node(t());
+    other._before_head = new Node(T());
     other._before_head->next = nullptr;
     other._size = 0;
   }
