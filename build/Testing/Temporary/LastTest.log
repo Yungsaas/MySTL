@@ -1,41 +1,22 @@
-Start testing: Jan 09 16:37 W. Europe Standard Time
+Start testing: Jan 15 18:47 W. Europe Standard Time
 ----------------------------------------------------------
-1/2 Testing: VectorTests
-1/2 Test: VectorTests
+1/3 Testing: VectorTests
+1/3 Test: VectorTests
 Command: "C:/Users/miksh/Documents/GitHub/MySTL/build/Debug/tests_vector.exe"
 Directory: C:/Users/miksh/Documents/GitHub/MySTL/build
-"VectorTests" start time: Jan 09 16:37 W. Europe Standard Time
+"VectorTests" start time: Jan 15 18:47 W. Europe Standard Time
 Output:
 ----------------------------------------------------------
-Randomness seeded to: 407725374
+Randomness seeded to: 3191425676
 ===============================================================================
 All tests passed (57 assertions in 25 test cases)
 
 <end of output>
-Test time =   0.05 sec
+Test time =   0.06 sec
 ----------------------------------------------------------
 Test Passed.
-"VectorTests" end time: Jan 09 16:37 W. Europe Standard Time
+"VectorTests" end time: Jan 15 18:47 W. Europe Standard Time
 "VectorTests" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-2/2 Testing: VectorIteratorTests
-2/2 Test: VectorIteratorTests
-Command: "C:/Users/miksh/Documents/GitHub/MySTL/build/Debug/tests_vector_iterator.exe"
-Directory: C:/Users/miksh/Documents/GitHub/MySTL/build
-"VectorIteratorTests" start time: Jan 09 16:37 W. Europe Standard Time
-Output:
-----------------------------------------------------------
-Randomness seeded to: 214266542
-===============================================================================
-All tests passed (21099 assertions in 48 test cases)
-
-<end of output>
-Test time =   0.07 sec
-----------------------------------------------------------
-Test Passed.
-"VectorIteratorTests" end time: Jan 09 16:37 W. Europe Standard Time
-"VectorIteratorTests" time elapsed: 00:00:00
-----------------------------------------------------------
-
-End testing: Jan 09 16:37 W. Europe Standard Time
+End testing: Jan 15 18:47 W. Europe Standard Time
