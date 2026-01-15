@@ -162,8 +162,7 @@ public:
     _size = 0;
   }
 
-
-  //custom iterator classes
+  // custom iterator classes
   class iterator {
   private:
     Node *_node; // pointer to the current node we're at
@@ -245,6 +244,60 @@ public:
       return _node != other._node;
     }
   };
+  // iterator implementation
+
+  iterator before_begin() { return iterator(_before_head); }
+  const_iterator before_begin() const { return const_iterator(_before_head); }
+  const_iterator cbefore_begin() const { return const_iterator(_before_head); }
+
+  iterator begin() { return iterator(_before_head->next); }
+  const_iterator begin() const { return const_iterator(_before_head->next); }
+  const_iterator cbegin() const { return const_iterator(_before_head->next); }
+
+  iterator end() { return iterator(nullptr); }
+  const_iterator end() const { return const_iterator(nullptr); }
+  const_iterator cend() const { return const_iterator(nullptr); }
+
+  // iterator operations
+  iterator insert_after(iterator pos, const T &val) {
+    // create new node pointing to the node after pos
+    Node *new_node = new Node(val, pos._node->next);
+    // make pos point to new node
+    pos._node->next = new_node;
+    _size++;
+    // return iterator to newly inserted element
+    return iterator(new_node);
+  }
+
+  // insert_after, move
+  iterator insert_after(iterator pos, T &&val) {
+    // create new node by moving val, pointing to node after pos
+    Node *new_node = new Node(std::move(val), pos._node->next);
+    // make pos point to new node
+    pos._node->next = new_node;
+    _size++;
+    // return iterator to newly inserted element
+    return iterator(new_node);
+  }
+
+  // erase_after
+  iterator erase_after(iterator pos) {
+    if (pos._node->next == nullptr) {
+      throw std::out_of_range("Tried to erase after at end of forward list.");
+    }
+
+    // save pointer to node we're removing
+    Node *to_delete = pos._node->next;
+    // make pos skip over the deleted node
+    pos._node->next = to_delete->next;
+    // save iterator to the node after deleted one
+    iterator result(pos._node->next);
+    // delete the node
+    delete to_delete;
+    _size--;
+    // return iterator to element after deleted one
+    return result;
+  }
 };
 
 } // namespace mystl
